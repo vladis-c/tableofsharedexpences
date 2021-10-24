@@ -1,0 +1,60 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="header-div">
+        <h1>EXPENCES</h1>
+        <h4>This app counts who ows the money and how much in the end of the day<h4>
+        <h5>Provide two names, how much was spent, who paid, and if it was used by both of you<h5>
+        <h5>Example: Brian and Monica. Brian spent 20 euros, on pizza, but they ate it together. The result here will be in the table: Monica owes Brian 10 euros<h5>
+        <h5>Table in the bottom shows the entries and the total result<h5> 
+        </div>
+        
+            <div id="name-div"><p id="names-p">Names:</p>
+            <input type="text" placeholder="name" id="name-input1"/>
+            <input type="text" placeholder="name" id="name-input2"/>
+            <br />
+            </div>
+        
+            <div id="data-div">
+            <p id="spent-p">Spent:</p>
+            <input type="number" placeholder="euros" id="euros-input"/>
+            <span id="euros-p"> Euros</span>
+            <p id="paid-p">Paid by: </p>
+            <select name="select" id="select-input">
+                <option>SELECT</option>
+                <option id="option-input1"></option>
+                <option id="option-input2"></option>
+             </select>   
+            <br />
+            
+            <p id="used-p">Used by:</p>
+            <input type="checkbox" id="checkbox-input1" visibility="hidden" unchecked/><span id="checkbox-name1"> Used by both?</span>
+            <br />
+            
+            <p><button id="send-btn">SEND INFO</button>
+            <button id="clear-btn">CLEAR DATA</button></p>
+            <br />
+            </div>
+        </div>
+        <div id="table-div">
+        <table id="table">
+                <thead>
+                    <tr>
+                    <th id="table-input-name1"></th>
+                    <th id="table-input-name2"></th>
+                    </tr>
+                 <thead>
+                 <tbody>                     
+                 </tbody>
+        </table>
+        <button id="delete-row-btn">DELETE ROW</button>
+        <h4 id="table-result"></h4>
+        </div>
+        <script src="index.pack.js"></script>
+    </body>
+</html>
